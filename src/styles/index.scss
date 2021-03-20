@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: url("/public/bg.jpg");
+}
+
+.main {
+  width: 60%;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  overflow: hidden;
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+  }
+}

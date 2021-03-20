@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.details-page {
+  
+  &__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    color: $color2;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+    @media (max-width: 400px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+
+  &__button {
+    background-color: $color1;
+    color: $color1;
+    padding: 0.8em 1em 0.8em 1em;
+    height: 3em;
+    outline: none;
+    background-color: $color4;
+    border: none;
+    color: $color2;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+      background-color: #1D1C1C;
+    }
+
+    @media (max-width: 400px) {
+      height: 3em;
+      padding: 0;
+      font-size: 12px;
+    }
+  }
+}

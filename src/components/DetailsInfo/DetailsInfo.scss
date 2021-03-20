@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+
+.details-info {
+
+  &__name {
+    margin: 0;
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
+  }
+  
+  &__head {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: $font1;      
+    -webkit-box-align: center;      
+        -ms-flex-align: center;      
+            align-items: center;
+    
+
+    .people-icon {
+      max-height: 2em;
+      margin-right: 10px;
+    }
+  }
+
+  &__list {
+    font-family: $font1;  
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    @media screen and (max-width: 400px) {
+      font-size: 13px;
+    }
+    
+    &-item {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+
+.list-item {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3em;
+  padding-left: 10px;
+  color: $color2;
+  font-family: $font1;
+
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+  }
+  
+  &__name {
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $color2;
+    background-color: $color4;
+  }
+
+  .people-icon {
+    max-width: 25px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../styles/variables.scss";
+
+.details-additional {
+
+  color: $color2;
+
+  &__tabs {
+    margin-top: 20px;
+  }
+
+  &__tab {
+    background-color: $color4;
+    color: $color2;
+    font-size: 15px;
+    border: 1px solid $color4;
+
+    width: calc(100% / 3);
+    height: 50px;
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+    outline: none;
+    
+    &:hover {
+      background-color: rgb(29, 28, 28);
+    }
+
+    &.selected {
+      background-color: $color1;
+      border-bottom: 2px solid $color1;
+    }
+  }
+}
